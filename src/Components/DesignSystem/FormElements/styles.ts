@@ -3,6 +3,7 @@ import styled from "styled-components"
 interface EntryInputProps {
     isDisable?: boolean;
     isSearchIcon?: boolean;
+    isRoundedBordered?: boolean;
 }
 
 export const EntryInput = styled.input<EntryInputProps>`
@@ -10,15 +11,11 @@ export const EntryInput = styled.input<EntryInputProps>`
     min-height: 44px;
     font-size: 14px;
     font-weight: 400;
-    border: none;
+    border: 1px solid #ccc;
     background-color: #EFF2F9;
     padding: 5px 10px;
     padding-left: ${props => props.isSearchIcon ? "40px" : "10px"};
-    border-radius: 6px;
-
-    &:focus {
-        outline: none;
-    }
+    border-radius:  ${props => props.isRoundedBordered ? "22px" : '6px'};
 `;
 
 export const LabelHeading = styled.label`

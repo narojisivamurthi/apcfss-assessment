@@ -24,13 +24,18 @@ export const MegamenuItem = styled.div<MegamenuItemProps>`
     display: flex;
     align-items: center;
     background-color: ${props => props.isSelected ? '#FFF2F2' : 'white'};
-    padding: 15px 20px;
     border-radius: 10px;
     color:  ${props => props.isSelected ? 'red' : '#A5A5A5'};
     font-size: 16px;
     font-weight: 500;
     text-align: start;
     cursor: pointer;
+    a {
+        padding: 15px 20px;
+        width: 100%;
+        text-decoration: none;
+        color:  ${props => props.isSelected ? 'red' : '#A5A5A5'};
+    }
     
     
     .hover-img {

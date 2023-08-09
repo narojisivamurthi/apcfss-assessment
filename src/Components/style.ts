@@ -154,6 +154,13 @@ export const InformationText = styled.div`
 export const FlexColumn = styled.div`
     display: flex;
     flex-direction: column;
+    gap: 8px;
+`;
+
+export const ButtonsWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 16px;
 `;
 
 export const FlexCenter = styled.div`
